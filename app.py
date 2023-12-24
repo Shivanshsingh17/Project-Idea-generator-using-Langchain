@@ -1,8 +1,6 @@
-# Bring in deps
 import os 
-from apikey import apikey 
-
 import streamlit as st 
+from apikey import apikey 
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain 
@@ -24,7 +22,7 @@ title_template = PromptTemplate(
 
 script_template = PromptTemplate(
     input_variables = ['title', 'wikipedia_research'], 
-    template='write me a project idea based on this title TITLE: {title} while leveraging this wikipedia reserch:{wikipedia_research} '
+    template='please write me a project idea based on this title TITLE: {title} while leveraging this wikipedia reserch:{wikipedia_research} '
 )
 
 # Allocate Memory
