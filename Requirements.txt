@@ -1,0 +1,8 @@
+##COPY THIS CODE OR INSTALL THESE
+
+pip install streamlit
+pip install langchain
+pip install openai
+pip install chromadb
+pip install tiktoken
+pip install wikipedia
